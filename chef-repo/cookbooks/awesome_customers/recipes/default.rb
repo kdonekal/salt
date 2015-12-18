@@ -15,9 +15,6 @@ end
 service 'httpd' do
 	action [:enable, :start]
 end
-package 'vagrant' do
-	action :download
-end
 file '/var/www/html/index.html' do
 content '<html>
 		<body>
